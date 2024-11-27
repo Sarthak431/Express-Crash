@@ -62,6 +62,10 @@ let posts = [
     }
   
     post.title = req.body.title;
+    posts = posts.filter((post) => post.id !== id);
+
+    posts.push(post);
+
     res.status(200).json(posts);
   };
   

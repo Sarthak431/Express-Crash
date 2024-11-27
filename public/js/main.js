@@ -47,7 +47,6 @@ async function addPost(e) {
     const postEl = document.createElement('div');
     postEl.textContent = newPost.title;
     output.appendChild(postEl);
-    showPosts();
   } catch (error) {
     console.error('Error adding post');
   }
